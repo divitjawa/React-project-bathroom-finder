@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Mobile Styles */
+@media only screen and (max-width: 375px) {
+    h1{
+        font-size: 25px;
+    }
+
+    li {
+        list-style-type: none;
+        float: left;
+    }
+    
+    .topnav a {
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        left: -25px;
+    }
+    #details {
+        display: none;
+    }
+    #homePageMap {
+        position: relative;
+        width: 400px;
+        height: 400px;
+    }
+    #homePageMap h2 {
+        position:relative;
+        left: 80px;
+        top: -10px;
+    }
+    
+    footer {
+        position:relative;
+        top: 50px;
+        
+    }
+
+    /* Add Bathroom */
+    #addBathroomMap {
+        display:none;
+    }
+
+    #add {
+        position: relative;
+        left: 110px;
+    }
+
+    /*About*/
+    #theCard:hover {
+        position: relative;
+        transform: rotateY(180deg);
+    }
+    #card1 {
+        position: fixed;
+        margin-left: 337px;
+        margin-top: -730px;
+        width: 150%;
+        height: 80%;
+    }
+    #card2 {
+       position: fixed;
+       margin-left: -63px;
+       margin-right: auto;
+       margin-top: -450px;
+       width:150%;
+       height: 80%;     
+    }
+    #card3{
+       position: fixed;
+       margin-left: -463px;
+       margin-right: auto;
+       margin-top: -170px;
+       width:150%;
+       height: 80%;
+    }
+    #About {
+        display:none;
+    }
+    .problem, #problem, .solution, #solution, .planning, #planning{
+        display: none;
+    }
+}
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+      .theCard {
+          display: none;
+      }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+
+  }
+
+
+/* All Pages CSS */
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+main {
+   background: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Home Page specific CSS */
+#homePageMap img {
+    width: 100%;
+    height: 100%;
+    padding-top: 27px;
+}
+.user img {
+    display: inline-block;
+}
+
+img.rating {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+/* Add Bathroom Page specific CSS */
+#addBathroomMap img {
+    width: 90%;
+    height: 90%;
+    padding-top: 35px;
+    position: relative;
+    left: 7%;
+}
+
+#homePageMap {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+
+#add {
+    line-height: 2.5em;
+}
+
+
+/* About Page specific CSS */
+
+#About {
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 35px;
+    color: #fdcb6e;
+}
+
+.About {
+    font-size: 20px;
+}
+
+.About h2 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+#problem {
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.problem {
+    padding:5px;
+    margin-bottom:5px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#solution {
+    margin-left: 5px;
+    margin-top: 46px;
+}
+.solution, p {
+    padding:5px;
+    margin-top:-5px;
+    margin-bottom:5px;
+    margin-left:10px;
+}
+footer {
+    background: linear-gradient(0deg, #00C9FF 0%, #afca89 100%);
+}
+
+/* flipping card CSS */
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.mainContainer {
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES rel */
+.theCard {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+#card1 {
+    position: absolute;
+    top: 540px;
+    left: -400px;
+}
+
+#card2 {
+    position: fixed;
+    top: 540px;
+}
+
+#card3 {
+    position: fixed;
+    top: 540px;
+    left: 400px;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.theCard:hover {
+    transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #ffc728;
+    color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #ffc728;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.front h1, .back h1 {
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.front p, .back p {
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+
+
+/*Add bathroom React css*/
+.title {
+    margin-top: -50px;
+    margin-left: 25px;
+    padding: 5px;
+    color: #fdcb6e;
+
+  }
+
+  .email {
+      padding: 30px;
+      font-size: 23px;
+  }
+  
+  .type {
+    padding: 30px;
+    font-size: 23px;
+  }
+
+  .comments {
+    padding: 30px;
+    margin-left: 1px;
+    font-size: 23px;
+  }
+
+  #submit1 {
+    background-color: #fdcb6e;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+    width: 40%;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+
+  /*coords*/
+
+  .display h2 {
+      color:#fdcb6e;
+      font-size: 28px;
+      margin-top: 510px;
+      margin-left: -1220px;
+      position: absolute;
+      float: left;
+  }
+  #getloc {
+    background-color: #fdcb6e;
+    padding: 5px;
+    margin-top: 600px;
+    margin-left: -1220px;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    position: absolute;
+    float: left;
+  }
+
+  .display p{
+      margin-left: -1325px;
+      margin-top: 560px;
+      position: absolute;
+      padding: 5px;
+      float: left;
+  }
+
+
+/* Home */
+
+.home h1, h2{
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.home h1 {
+    color:  #fdcb6e;
+}
