@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/info340a-w20/project-travelanywhere/static/css/main.287c6b9b.chunk.css",
+    "main.js": "/info340a-w20/project-travelanywhere/static/js/main.3b7b4655.chunk.js",
+    "main.js.map": "/info340a-w20/project-travelanywhere/static/js/main.3b7b4655.chunk.js.map",
+    "runtime-main.js": "/info340a-w20/project-travelanywhere/static/js/runtime-main.6236637a.js",
+    "runtime-main.js.map": "/info340a-w20/project-travelanywhere/static/js/runtime-main.6236637a.js.map",
+    "static/js/2.9fd9f62a.chunk.js": "/info340a-w20/project-travelanywhere/static/js/2.9fd9f62a.chunk.js",
+    "static/js/2.9fd9f62a.chunk.js.map": "/info340a-w20/project-travelanywhere/static/js/2.9fd9f62a.chunk.js.map",
+    "index.html": "/info340a-w20/project-travelanywhere/index.html",
+    "precache-manifest.583c4b6300490fa2029448b9bb6b4643.js": "/info340a-w20/project-travelanywhere/precache-manifest.583c4b6300490fa2029448b9bb6b4643.js",
+    "service-worker.js": "/info340a-w20/project-travelanywhere/service-worker.js",
+    "static/css/main.287c6b9b.chunk.css.map": "/info340a-w20/project-travelanywhere/static/css/main.287c6b9b.chunk.css.map",
+    "static/js/2.9fd9f62a.chunk.js.LICENSE.txt": "/info340a-w20/project-travelanywhere/static/js/2.9fd9f62a.chunk.js.LICENSE.txt",
+    "static/media/Seattlemap.png": "/info340a-w20/project-travelanywhere/static/media/Seattlemap.aa397aed.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6236637a.js",
+    "static/js/2.9fd9f62a.chunk.js",
+    "static/css/main.287c6b9b.chunk.css",
+    "static/js/main.3b7b4655.chunk.js"
+  ]
+}
